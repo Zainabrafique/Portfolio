@@ -1,0 +1,30 @@
+.btn{
+    padding:0.4rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+}
+.Primary{
+    background-color: var(--primary);
+    transition: 0.4s ease;
+   
+
+}
+.Primary:hover{
+    background-color:transparent;
+    color: var(--primary);
+    outline: 0.2rem solid var(--primary);
+}
+.secondary{
+    background-color:transparent;
+    color: var(--primary);
+    outline: 0.2rem solid var(--primary);
+}
+.secondary:hover{
+    background-color: var(--primary);
+    color: var(--secondary);
+    transition: 0.3s ease;
+}

@@ -1,0 +1,395 @@
+@import url(./utilities.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+:root {
+    --primary: #3DCFD3;
+    --dark: #161616;
+    --pure: #FFFFFF;
+    --ternary: #898989;
+    --light: #F2F2F2;
+    --secondary: #070606;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+header {
+    background-color: var(--dark);
+    clip-path:polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
+
+}
+
+.navbar {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+    padding-top: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+
+
+}
+
+ .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+} .logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+
+}
+ .logo h2 {
+    color: var(--light);
+    margin-right: 2rem;
+
+}
+
+.navbar .logo ul {
+    display: flex;
+}
+
+.navbar .logo ul {
+    display: flex;
+}
+
+.navbar .logo ul li {
+    list-style: none;
+
+}
+
+.navbar .logo ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-right: 2rem;
+    color: var(--pure);
+    transition: 0.3s all ease;
+    cursor: pointer;
+
+}
+
+.navbar .logo ul li a:hover {
+    color: var(--primary);
+
+}
+
+.Hero {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+    padding-top: 4rem;
+    font-family: 'Ubuntu', sans-serif;
+    padding-bottom: 7rem;
+    
+}
+.Hero .My-img{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    
+}
+.Hero .My-img img {
+    width: 400px;
+    margin-bottom: 5rem;
+    border-radius: 20px;
+   
+    transform-origin: center center;
+    transition: transform 0.5s ease;
+    
+}
+.Hero .My-img img:hover {
+    transform: rotateZ(-10deg) ;
+}
+
+.Hero .My-info {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex-direction: column;
+    
+    margin-left: 3rem;
+}
+
+.Hero .My-info h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+.Hero .My-info h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: var(--pure);
+}
+.Hero .My-info h2 span {
+    color: var(--primary);
+}
+.Hero .My-info p{
+    color: var(--pure);
+    line-height: 2rem;
+    letter-spacing:0.1rem;
+    padding-bottom: 2rem;
+}
+.About-img{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+.About-img img{
+    width: 300px;
+    border-radius: 2rem;
+}
+.About-Me{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.About-Me h3{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.About-Me h3 span{
+    color: var(--primary);
+}
+.About-Me h6{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.About-Me p{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 2rem;
+}
+.Social i{
+    font-size: 2rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+.Social i:hover{
+    color: var(--primary);
+}
+.main{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/camera.png);
+    clip-path:polygon(0 0, 100% 0, 100% 100%, 60% 80%, 0 100%);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 7rem;
+    margin-bottom:5rem;
+    padding-bottom: 13rem;
+}
+.main h1{
+    font-size: 3rem;
+    color: var(--pure);
+    margin-bottom: 1rem;
+}
+.main h4{
+    color: var(--pure);
+    margin-bottom: 1.5rem;
+}
+.section-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.section-heading h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom:0.5rem;
+}
+.section-heading h3 span{
+    color: var(--primary);
+}
+.section-heading p{
+    color: var(--ternary);
+}
+.Our-Work{
+    background-color: var(--light);
+    padding: 4rem;
+    
+}
+.Card-Wrapper{
+    display: grid;
+    padding-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 3rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1.5rem;
+    width: 60%;
+    margin: auto;
+}
+.Card-Wrapper .Card {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 2rem;
+    cursor: pointer;
+    transition: 0.5s all ease;
+  
+}
+.Card-Wrapper .Card .service{
+    position: absolute;
+    justify-content: center;
+    display: none;
+    top:0;
+    left: 0;
+    transition: 0.5s all ease;
+    
+}
+.Card-Wrapper .Card .service h4{
+    font-size: 1rem;
+    color: var(--pure);
+    line-height: 1.5rem;
+    
+}
+.Card-Wrapper .Card .service h6{
+    font-size: 1rem;
+    color: var(--pure);
+    line-height: 1rem;
+    
+}
+.Card-Wrapper .Card:hover .service{
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(61, 207, 211, 0.9);;
+    width: 100%;
+    height: 100%;
+}
+.Our-Blog{
+   margin-top: 3rem;
+   padding-top: 3rem;
+   background-color: var(--dark);
+   clip-path:polygon(0 0, 100% 0, 100% 100%, 65% 87%, 0 100%);
+
+}
+.Our-Blog .section-heading h3{
+    color: var(--pure);
+}
+.Our-Blog .Card-Wrapper {
+    padding-bottom: 12rem;
+}
+.Our-Blog .Card-Wrapper .Card{
+    background-color: var(--light);
+    padding-bottom: 2rem;
+}
+.Our-Blog .Card-Wrapper .Card .detail{
+  padding: 0 2rem;
+  text-align: start;
+}
+.Our-Blog .Card-Wrapper .Card .detail h4{
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+.Our-Blog .Card-Wrapper .Card .detail h6{
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+.Our-Blog .Card-Wrapper .Card .detail p{
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: var(--ternary);
+  margin-bottom: 1rem;
+}
+.Our-Blog .Card-Wrapper .Card .detail h3 a{
+  text-decoration: none;
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: var(--secondary);
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.Our-Blog .Card-Wrapper .Card .detail h3 a:hover{
+  color: var(--primary);
+}
+.contact .Card-Wrapper .Card i{
+    font-size: 2rem;
+    margin-bottom:1rem;
+}
+.contact .Card-Wrapper .Card h3{
+    font-size: 1.5rem;
+    margin-bottom:1rem;
+}
+.contact .Card-Wrapper .Card h4{
+    font-size: 1rem;
+    color: var(--ternary);
+}
+form{
+    width: 60%;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+form .first{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+form .first input{
+    padding: 0.5rem 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    outline: none;
+}
+form .second input{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    outline: none;
+}
+form textarea{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    outline: none;
+}
+form button{
+   margin-top: 2rem;
+   width: 30%;
+}
+footer{
+    background-color: var(--secondary);
+    margin-top: 5rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+footer .logo h2{
+    color: var(--pure);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+footer .Social i{
+    color: var(--pure);
+    margin-bottom: 2rem;
+}
+footer p{
+    color: var(--ternary);
+    padding-bottom: 5rem;
+}
+
